@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Snake</title>
+<!-- Add your CSS here or inline -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#34A853">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+<canvas id="game" width="300" height="300"></canvas>
+<script>
+  // Your full Snake game JS code goes here (swipe, grid, colors, restart, walls, high score)
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+  .then(() => console.log('Service Worker registered'))
+  .catch(() => console.log('Service Worker failed'));
+}
+</script>
+</body>
+</html>
